@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="turn.js"></script>
+    <title>Kokoro Lei</title>
+    <style>
+        @font-face {
+            font-family: jf-openhuninn;
+            src: url(jf-openhuninn-1.0.ttf);
+        }
+
+        body {
+            font-family: jf-openhuninn;
+        }
+
+
+
+        img {
+            margin: 20px;
+            align-content: center;
+            border-radius: 5px;
+        }
+
+        #album img {
+
+            width: 150px;
+            height: 110px;
+            position: fixed;
+
+
+        }
+
+
+
+        #flipbook .page {
+            border-radius: 10px;
+            background-color: white;
+            line-height: 20px;
+            font-size: 18px;
+            text-align: center;
+            box-shadow: inset 0 0 5px rgb(207, 204, 204);
+            overflow: auto;
+        }
+
+        .hard {
+            border-radius: 10px;
+            background-color: lightblue;
+            box-shadow: inset 0 0 5px rgb(207, 204, 204);
+        }
+    </style>
+</head>
+<script>
+    $(document).ready(function () {
+
+        $("#flipbook").turn({
+            width: 965,
+            height: 1000,
+            autoCenter: true,
+            display: 'single',
+        });
+
+        
+    });
+
+</script>
+
+<body>
+    <div id="album">
+        <img src="src/vinly.png" alt=""> </div>
+
+    <div id="flipbook">
+        <div class="hard "></div>
+
+
+        <div class=" page ">
+            <br>浪ID: 3707369
+            <br>
+            <img src="src/mark.png" width="auto" height="250">
+            <br>⚡傘店の雷衣🌊
+            <br>
+            <br>⭐官方認證⭐
+            <br>發行個人單曲【就算會下雨/雨が降っても】
+            <br>《燦爛致星Show出自我》歌唱比賽亞軍
+            <br>《史坦巴哈音樂檢定》長笛五級
+            <hr style="width: 80%;">
+            <br>
+
+        </div>
+        <div class="page"> Page 2 </div>
+        <div class="page"> Page 3 </div>
+        <div class="page"> Page 4 </div>
+        <div class="hard "></div>
+    </div>
+
+    <div id="card">
+
+    </div>
+
+</body>
+
+</html>
